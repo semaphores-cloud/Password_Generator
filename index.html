@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+                
+        <div class="wrapper">
+            <h2>Generate a Password</h2>
+            <section id="content">
+            <hr>
+            <div class="outer" title=" ">
+                <form>
+                    <div id="up">
+                        <input type="checkbox" checked><input type="text">
+                        <span>  <a href="#">Uppercase character</a></span>
+                    </div>
+                    <div id="low">
+                        <input type="checkbox" checked><input type="text">
+                        <span>  <a href="#">Lowercase Character</a></span>
+                    </div>
+                    <div id="number">
+                        <input type="checkbox" checked><input type="text">
+                        <span>  <a href="#">Numeric</a></span>
+                    </div>
+                    <div id="special">
+                        <input type="checkbox" checked><input type="text">
+                        <span>  <a href="#">Symbol</a></span>
+                    </div>
+                    <br />
+                   <div id= "Length">Character Length:</div>
+                   <input id="length" type="text" value=""><br /><hr>
+                   <textarea id="display" type="text" name="user_pass" placeholder="Your Secure Password"></textarea>
+                   <hr>
+                   <input type="submit" id="gen" value="Generate Password" onclick="generatePassword();  return false";>
+                   <br /><br/>
+                   
+                    <div class="box">
+                        <button id="btn" onclick="myFunction()">Copy to Clipboard</button>                   
+                    </div>
+                </form>                 
+             </div>     
+            </section>
+        </div>
+            
+    <script src="script.js"></script>
+        
+</body>
+</html>
