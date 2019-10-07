@@ -4,7 +4,7 @@ var charTypes = {
     'up': 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     'low': 'abcdefghijklmnopqrstuvwxyz',
     'number': '0123456789',
-    'special': '!$%^&*();#:@~./<>?'
+    'special': '!$%^&*()#@~/<>?'
 };
 window.onload = function() { 
     var inputs = document.querySelectorAll('form div input[type=text]');
